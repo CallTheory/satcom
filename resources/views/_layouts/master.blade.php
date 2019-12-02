@@ -6,6 +6,7 @@
 
     <title>@yield('title')</title>
     <script src="{{ secure_asset('/js/app.js') }}"></script>
+    @stack('scripts')
     <link href="{{ secure_asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <body class="my-12 bg-white">

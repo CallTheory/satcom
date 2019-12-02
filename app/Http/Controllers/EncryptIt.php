@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Faker\Factory;
+use ReCaptcha\ReCaptcha;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
@@ -18,8 +19,20 @@ class EncryptIt extends Controller
     public function __invoke(Request $request)
     {
         $this->validate( $request, [
-            'content' => 'required|max:4096'
+            'content' => 'required|max:4096',
+            'g-recaptcha-response' => 'required'
         ]);
+
+        $recaptcha = new ReCaptcha( config('services.google.recaptcha.v2.secret_key') );
+
+        $resp = $recaptcha->setExpectedHostname(config('services.google.recaptcha.v2.host') )
+            ->verify( $request->input('g-recaptcha-response'), $request->server('REMOTE_ADDR'));
+
+        if( ! $resp->isSuccess() )
+        {
+            //$errors = $resp->getErrorCodes();
+            return redirect()->back();
+        }
 
         $session = $request->session()->getId();
         $uuid = (string)Str::uuid();

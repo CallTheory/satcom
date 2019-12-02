@@ -1,6 +1,10 @@
 @extends('_layouts.master')
 
-@section('title', 'Send credentials safely')
+@section('title', 'Send credentials more safely than email')
+
+@push('scripts')
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+@endpush
 
 @section('content')
 
@@ -26,13 +30,16 @@
 
             </button>
 
+            <div class="container text-center">
+                <div class="mx-auto" style="width:304px;">
+                    <div class="g-recaptcha" data-sitekey="{{ config('services.google.recaptcha.v2.site_key') }}"></div>
+                </div>
+            </div>
+
+
             @error('content')
                 <small class="block my-4 text-sm italic text-red-400 font-semibold text-center mx-auto">
                     {{ $message }} <a class="font-bold text-gray-500 hover:text-gray-700" href="/">Reset</a>
-                </small>
-            @else
-                <small class="invisible my-4 text-sm italic text-red-400 font-semibold text-center mx-auto">
-                   &nbsp;
                 </small>
             @enderror
 
