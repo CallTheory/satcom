@@ -6,7 +6,7 @@
 
     <div class="container w-full">
 
-        <div class="container items-center w-full my-6 mx-0 text-center">
+        <div class="container items-center w-full my-6 mx-0 text-center px-3">
 
             <p class="block my-12 max-w-xl mx-auto rounded shadow-lg bg-green-200 text-green-600 text-center font-sans font-semibold p-4">
                 <span class="text-green-400">&check;</span> The retrieval link has been sent
