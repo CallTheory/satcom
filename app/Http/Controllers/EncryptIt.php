@@ -31,7 +31,7 @@ class EncryptIt extends Controller
         if( ! $resp->isSuccess() )
         {
             //$errors = $resp->getErrorCodes();
-            return redirect()->back();
+            return redirect()->back()->withErrors(['g-recaptcha-response' => 'The recaptcha verification failed.']);
         }
 
         $session = $request->session()->getId();

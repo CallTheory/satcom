@@ -1,13 +1,13 @@
 @extends('_layouts.master')
 
-@section('title', 'Send credentials safely')
+@section('title', 'Enter your passphrase')
 
 @section('content')
 
     <div class="container w-full mx-auto">
 
         <form method="POST" class="flex-wrap mx-auto items-center w-full px-3 max-w-4xl">
-            <p class="text-sm text-center text-gray-600 font-semibold">
+            <p class="text-sm text-center text-indigo-200 font-semibold block my-4">
                 Enter the <strong>four words</strong> supplied by the sender in the boxes below.
             </p>
             {{ csrf_field() }}
@@ -42,9 +42,10 @@
             </div>
 
             <div class="flex mx-auto max-w-xl mt-6">
-                <button type="submit" class="flex p-4 mx-auto my-4
-                    rounded shadow font-bold uppercase
-                    hover:bg-indigo-700 hover:text-white  bg-indigo-500 text-indigo-100 focus:shadow-outline text-center">
+                <button type="submit" class="mx-auto p-5 hover:bg-indigo-800
+            hover:text-white  bg-indigo-600 text-indigo-100
+            rounded my-4 shadow-lg font-bold uppercase
+             focus:shadow-outline text-center w-auto">
                     {{ __('Decrypt Content' ) }}
                 </button>
             </div>
