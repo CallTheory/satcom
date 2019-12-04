@@ -14,6 +14,7 @@ class EncryptIt extends Controller
     public function __construct()
     {
         $this->middleware(ProtectAgainstSpam::class );
+        $this->middleware( 'throttle:1,1' ); //1 request per minute
     }
 
     /**
