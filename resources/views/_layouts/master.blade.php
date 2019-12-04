@@ -10,7 +10,7 @@
     <link href="{{ secure_asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gradient min-h-full">
-    <header class="block bg-white mx-0 w-full text-center py-6">
+    <header class="block bg-white mx-0 w-full text-center py-6 shadow border-b border-gray-300">
         <a href="/">
 
             <h1 class="text-4xl text-indigo-700 font-black uppercase">

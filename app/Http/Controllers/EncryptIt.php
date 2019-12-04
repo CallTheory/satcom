@@ -7,9 +7,15 @@ use ReCaptcha\ReCaptcha;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 class EncryptIt extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(ProtectAgainstSpam::class );
+    }
+
     /**
      * Handle the incoming request.
      *

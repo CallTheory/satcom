@@ -15,6 +15,8 @@
                 Enter the information you'd like to encrypt. You'll enter the recipient in the next step.
             </p>
 
+            @honeypot
+
             {{ csrf_field() }}
 
             <textarea name="content" rows="5"
