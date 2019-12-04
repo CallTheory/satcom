@@ -1,8 +1,8 @@
 @extends('_layouts.master')
 
 @php
-    $code = 500;
-    $desc = 'Server Error';
+    $code = 429;
+    $desc = 'Too Many Requests';
 @endphp
 
 @section('title', $desc )

@@ -1,14 +1,12 @@
 @extends('_layouts.master')
 
-@section('title', 'Server Unavailable')
+@php
+    $code = 503;
+    $desc = 'Server Unavailable';
+@endphp
+
+@section('title', $desc )
 
 @section('content')
-
-    <div class="container">
-        <h1 class="uppercase py-16 my-16 text-6xl font-black mx-auto text-center text-indigo-700 break-all">
-            <a class="max-w-4xl" href="/">503</a>
-        </h1>
-
-    </div>
-
+    @include('errors.layout', [ 'code' => $code, 'desc' => $desc ] )
 @endsection
