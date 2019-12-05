@@ -8,7 +8,7 @@
 
 @section('content')
 
-    <div class="container w-full">
+    <div class="container w-full mx-auto">
 
         <form method="POST" class="mx-auto items-center max-w-xl px-3">
             <p class="text-sm text-center text-indigo-200 font-semibold block my-4">

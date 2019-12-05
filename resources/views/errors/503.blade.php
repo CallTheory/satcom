@@ -8,5 +8,5 @@
 @section('title', $desc )
 
 @section('content')
-    @include('errors.layout', [ 'code' => $code, 'desc' => $desc ] )
+    @include('_layouts.errors', [ 'code' => $code, 'desc' => $desc ] )
 @endsection

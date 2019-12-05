@@ -20,6 +20,8 @@ Route::get('/success/{uuid}', 'ShowSuccess');
 Route::post('/delete/{uuid}', 'DeleteIt');
 
 Route::get('/retrieve', 'ShowRetrieve')->name('retrieve');
-
 Route::post('/retrieve', 'RetrieveIt');
 
+Route::get('/about', 'ShowAbout' );
+Route::get('/privacy', 'ShowPrivacy' );
+Route::get('/terms', 'ShowTerms' );
