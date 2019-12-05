@@ -39,7 +39,7 @@
             <hr class="my-6">
 
             <h3 class="text-gray-700 font-bold text-lg">
-                Accuracy of materials
+                Accuracy of Materials
             </h3>
             <p class="text-sm text-left text-gray-600 font-semibold block my-2">
                 The materials appearing on NotifiUs, LLC's website could include technical, typographical, or photographic errors. NotifiUs, LLC does not warrant that any of the materials on its website are accurate, complete or current. NotifiUs, LLC may make changes to the materials contained on its website at any time without notice. However NotifiUs, LLC does not make any commitment to update the materials.

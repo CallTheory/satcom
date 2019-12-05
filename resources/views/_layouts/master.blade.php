@@ -16,7 +16,7 @@
                 <img src="/images/notifius.png" alt="NotifiUs, LLC" title="NotifiUs, LLC &middot; Ready to level up your call center?"
                      class="align-text-top w-64 inline-block">Encrypt
             </h1>
-            <p class="text-sm text-gray-400 font-semibold text-center">
+            <p class="text-sm text-gray-400 font-semibold text-center px-4">
                 Stop sending sensitive information directly in emails.
             </p>
         </a>

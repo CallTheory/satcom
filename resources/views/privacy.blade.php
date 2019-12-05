@@ -53,7 +53,7 @@
             </h3>
             <p class="text-sm text-left text-gray-600 font-semibold block my-2">
                 All data and passphrases are encrypted and stored into an automatically expiring in-memory key-value store.
-                All data is completely removed once the item expires or if you force expire it using the Expire Now hutton.
+                All data is completely removed once the item expires or if you force expire it using the Expire Now button.
             </p>
             <hr class="my-6">
 
