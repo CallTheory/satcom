@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
 @php
-    $code = 503;
-    $desc = 'Server Unavailable';
+    $code = 'Server Unavailable';
+    $desc = 'Check back soon';
 @endphp
 
-@section('title', $desc )
+@section('title', $code )
 
 @section('content')
     @include('_layouts.errors', [ 'code' => $code, 'desc' => $desc ] )

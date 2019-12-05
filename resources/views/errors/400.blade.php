@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
 @php
-    $code = 400;
-    $desc = 'Bad Request';
+    $code = 'Bad Request';
+    $desc = 'You did something wrong';
 @endphp
 
-@section('title', $desc )
+@section('title', $code )
 
 @section('content')
     @include('_layouts.errors', [ 'code' => $code, 'desc' => $desc ] )

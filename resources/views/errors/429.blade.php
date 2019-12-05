@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
 @php
-    $code = 429;
-    $desc = 'Too Many Requests';
+    $code = 'Too Many Requests';
+    $desc = 'Wait 1 minute before retrying';
 @endphp
 
-@section('title', $desc )
+@section('title', $code )
 
 @section('content')
     @include('_layouts.errors', [ 'code' => $code, 'desc' => $desc ] )

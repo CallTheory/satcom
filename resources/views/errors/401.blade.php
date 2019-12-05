@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
 @php
-    $code = 401;
-    $desc = 'Unauthorized';
+    $code = 'Unauthorized';
+    $desc = 'You shouldn\'t be here';
 @endphp
 
-@section('title', $desc )
+@section('title', $code )
 
 @section('content')
     @include('_layouts.errors', [ 'code' => $code, 'desc' => $desc ] )
