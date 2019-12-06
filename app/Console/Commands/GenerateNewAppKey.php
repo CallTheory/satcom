@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Predis\Collection\Iterator;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Artisan;
 
@@ -39,9 +40,12 @@ class GenerateNewAppKey extends Command
      */
     public function handle()
     {
-        $keys = Redis::scan( 0 );
 
-        if( count( $keys[1] ) == 0 )
+        $prefix = config('database.redis.options.prefix' );
+
+        $keys = Redis::scan( 0, 'MATCH', "{$prefix}encrypted:*" );
+        $items = count( $keys[1]);
+        if( $items == 0 )
         {
             // there are no keys, so we can safely rotate our application key
             // without breaking any current records ability to be decrypted
@@ -51,7 +55,7 @@ class GenerateNewAppKey extends Command
         }
         else
         {
-            $this->info('There are items in redis, bailing.');
+            $this->info("There are $items item(s) in redis, bailing.");
         }
 
 

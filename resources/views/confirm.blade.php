@@ -61,6 +61,13 @@
 
         </form>
 
+        <form class="flex mx-auto max-w-sm border-0 inline-block" method="POST" action="/delete/{{ $uuid }}">
+            {{ csrf_field() }}
+            <button class="mx-auto text-sm my-2 p-2 shadow-lg font-semibold uppercase rounded hover:bg-red-800 hover:text-white bg-red-600 text-red-100" type="submit">
+                Delete Content
+            </button>
+        </form>
+
     </div>
 
 @endsection
