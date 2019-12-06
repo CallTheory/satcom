@@ -18,6 +18,9 @@ Retrieve encrypted content
 Thanks,<br>
 
 NotifiUs, LLC
-[notifi.us](https://notifi.us)
+
+[https://encrypt.notifi.us](https://encrypt.notifi.us)
+
+[Report abuse](mailto:support@notifi.us?subject=NotifiUs Encrypt Email Abuse)
 
 @endcomponent
