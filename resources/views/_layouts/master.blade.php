@@ -7,15 +7,15 @@
     <meta name="description" content="Stop sending sensitive information directly in email">
     <meta name="keywords" content="encrypt,credentials,notifi,notifius,notifi us,labbett,patrick,patrick labbett,ohio,call center,call,center,answering,service,answering service">
     <meta property="og:site_name" content="encrypt.notifi.us">
-    <meta property="og:title" content="NotifiUs, LLC">
+    <meta property="og:title" content="NotifiUs Encrypt">
     <meta property="og:description" content="Stop sending sensitive information directly in email">
-    <meta property="og:image" content="{{ secure_url('/images/innovations.png') }}">
+    <meta property="og:image" content="{{ secure_url('/images/safe.png') }}">
     <meta property="og:url" content="https://encrypt.notifi.us">
     <meta property="og:type" content="website">
     <meta property="og:image:alt" content="Stop sending sensitive information directly in email">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="Level up your call center. ">
+    <meta name="twitter:image:alt" content="Level up your call center.">
 
     <link rel="icon" type="image/png" href="/images/notifius-icon.png">
 
@@ -32,8 +32,8 @@
                 <img src="/images/notifius.png" alt="NotifiUs, LLC" title="NotifiUs, LLC &middot; Ready to level up your call center?"
                      class="align-text-top w-64 inline-block">Encrypt
             </h1>
-            <p class="text-sm text-gray-400 font-semibold text-center px-4">
-                Stop sending sensitive information directly in emails.
+            <p class="text-sm text-gray-500 font-semibold text-center px-4">
+                Stop sending sensitive information directly in emails
             </p>
         </a>
     </header>
