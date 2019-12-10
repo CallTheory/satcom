@@ -17,17 +17,18 @@
                 decrypt the link sent to them.
                 <br>
                 <br>
-                This allows you to avoid forwarding emails with attached credentials, filter emails more effectively that relate to shared credentials, and keeps your inbox free of sensitive information.
+                This allows you to avoid forwarding emails with attached or inline sensitive information.
             </p>
             <hr class="my-6">
             <h3 class="text-gray-700 font-bold text-lg">
                 How does it improve security?
             </h3>
             <p class="text-sm text-left text-gray-600 font-semibold block my-2">
-                It solves two problems related to sharing credentials:
+
             <ul class="text-sm text-left text-gray-600 list-disc list-inside ml-2">
-                <li class="my-2">Eliminate sending sensitive information in non-encrypted email communication.</li>
-                <li class="my-2">Promotes sharing the credentials passphrase out of band.</li>
+                <li class="my-2">Eliminate including sensitive information in non-encrypted email communication.</li>
+                <li class="my-2">Promotes sharing the credentials passphrase out of band, reducing exposure to sniffing.</li>
+                <li class="my-2">Ensures emails do not contain credentials unencrypted at rest on email servers it passes through.</li>
                 </ul>
             </p>
             <p class="text-sm text-left text-gray-600 font-semibold block my-2">
