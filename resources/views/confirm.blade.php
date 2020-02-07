@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class="container w-full">
+    <div class="container w-full mx-auto">
 
         <form method="POST" class="flex-wrap mx-auto items-center w-full">
             <p class="text-sm text-center text-indigo-200 font-semibold block my-4">
