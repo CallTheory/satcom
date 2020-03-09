@@ -4,9 +4,9 @@
 
 @section('content')
 
-    <div class="container w-full">
+    <div class="flex-wrap w-full">
 
-        <div class="container items-center w-full my-6 mx-0 text-center px-3">
+        <div class="flex-wrap items-center w-full my-6 mx-0 text-center px-3">
 
             <div class="block my-12 max-w-xl mx-auto  text-center rounded shadow-lg bg-green-200 text-green-600 font-sans font-semibold px-6 pt-4 pb-8">
                 <h3 class="uppercase font-extrabold mb-2 text-green-700"><span class="text-green-400">&check;</span> The retrieval link has been sent</h3>
@@ -18,7 +18,7 @@
 
         </div>
 
-        <div class="container items-center w-full mx-auto bg-indigo-900 py-4 border-t-2 border-b-2 border-indigo-900 shadow text-center">
+        <div class="flex-wrap items-center w-full mx-auto bg-indigo-900 py-4 border-t-2 border-b-2 border-indigo-900 shadow text-center">
 
             <p class="text-center text-gray-500 px-3">
                 Passphrase to decrypt content:
