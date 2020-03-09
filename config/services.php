@@ -36,6 +36,9 @@ return [
                 'secret_key' => env('GOOGLE_RECAPTCHA_V2_SECRET', ''),
                 'host' => env('GOOGLE_RECAPTCHA_V2_HOST', ''),
             ]
+        ],
+        'ga' => [
+            'property' => 'UA-39918528-3',
         ]
     ],
 
