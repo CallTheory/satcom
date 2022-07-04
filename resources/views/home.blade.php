@@ -36,6 +36,9 @@
             <div class="container text-center">
                 <div class="mx-0 w-full">
                     <div class="g-recaptcha mx-auto" style="width:304px;" data-sitekey="{{ config('services.google.recaptcha.v2.site_key') }}"></div>
+                    @error('g-recaptcha-response')
+                        <div class="text-indigo-500 text-red-600">{{ $message  }}</div>
+                    @enderror
                 </div>
             </div>
 
