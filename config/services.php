@@ -16,10 +16,10 @@ return [
 
     'google' => [
         'recaptcha' => [
-            'v3' => [
-                'site_key' => env('GOOGLE_RECAPTCHA_V3_SITE', ''),
-                'secret_key' => env('GOOGLE_RECAPTCHA_V3_SECRET', ''),
-                'host' => env('GOOGLE_RECAPTCHA_V3_HOST', ''),
+            'v2' => [
+                'site_key' => env('GOOGLE_RECAPTCHA_V2_SITE', ''),
+                'secret_key' => env('GOOGLE_RECAPTCHA_V2_SECRET', ''),
+                'host' => env('GOOGLE_RECAPTCHA_V2_HOST', ''),
             ]
         ]
     ],
