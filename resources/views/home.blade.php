@@ -10,16 +10,16 @@
 
     <div class="container w-full mx-auto">
 
-        <form method="POST" class="mx-auto items-center max-w-xl px-3">
-            <p class="text-sm text-center text-indigo-200 font-semibold block my-4">
-                Enter the information you'd like to encrypt. You'll enter the recipient in the next step.
+        <form method="POST" class="mx-auto items-center max-w-xl px-3 py-8 my-8">
+            <p class="text-2xl text-center text-white font-semibold block my-4">
+                Enter the information you'd like to encrypt.<br><small class="text-indigo-700">You'll enter the recipient's email in the next step.</small>
             </p>
 
             @honeypot
 
             {{ csrf_field() }}
 
-            <textarea name="content" rows="5"
+            <textarea name="content" rows="10"
                       class="shadow-lg p-4 w-full border font-normal text-gray-800
                       border-gray-300 bg-gray-100 rounded font-mono
                       @error('content') border-red-400 bg-red-100 @enderror">{{ old('content') }}</textarea>

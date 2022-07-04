@@ -6,8 +6,8 @@
 
     <div class="container w-full mx-auto">
 
-        <form method="POST" class="flex-wrap mx-auto items-center w-full px-3 max-w-4xl">
-            <p class="text-sm text-center text-indigo-200 font-semibold block my-4">
+        <form method="POST" class="flex-wrap mx-auto items-center w-full px-3 max-w-4xl py-8 my-8">
+            <p class="text-2xl text-center text-white font-semibold block my-4">
                 Enter the <strong>four words</strong> supplied by the sender in the boxes below.
             </p>
             {{ csrf_field() }}

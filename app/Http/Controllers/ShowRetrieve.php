@@ -2,22 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class ShowRetrieve extends Controller
 {
-    /**
-     * Handle the incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): View|NotFoundHttpException
     {
-        if ( ! $request->hasValidSignature() )
+        if ( $request->hasValidSignature() )
         {
-            abort(404 );
+            return view('retrieve' )->with( 'uuid', $request->input('uuid') );
         }
-        return view('retrieve' )->with( 'uuid', $request->input('uuid') );
+
+        abort(404 );
     }
 }

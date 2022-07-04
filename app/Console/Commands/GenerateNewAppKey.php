@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Predis\Collection\Iterator;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Artisan;
 
@@ -34,21 +33,20 @@ class GenerateNewAppKey extends Command
     }
 
     /**
-     * Execute the console command.
+     * Reduce risk of app key re-use by occasionally generating a new app-key
      *
      * @return mixed
      */
     public function handle()
     {
-
         $prefix = config('database.redis.options.prefix' );
 
         $keys = Redis::scan( 0, 'MATCH', "{$prefix}encrypted:*" );
         $items = count( $keys[1]);
-        if( $items == 0 )
+        if( $items === 0 )
         {
             // there are no keys, so we can safely rotate our application key
-            // without breaking any current records ability to be decrypted
+            // without breaking any current records' ability to be decrypted
             $this->info('Setting new application key');
             Artisan::call('key:generate' );
             $this->info('Done!');
