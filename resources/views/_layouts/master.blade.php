@@ -29,15 +29,16 @@
 </head>
 <body class="bg-gradient min-h-full">
     <header class="block bg-white mx-0 w-full text-center py-6 pt-8 border-b border-gray-300">
-        <a href="/">
-            <h1 class="text-4xl text-indigo-700 font-black uppercase">
-                <img src="/images/notifius.png" alt="NotifiUs, LLC" title="NotifiUs, LLC &middot; Ready to level up your call center?"
-                     class="align-text-top w-64 inline-block">Encrypt
-            </h1>
-            <p class="text-sm text-gray-500 font-semibold text-center px-4">
-                Stop sending sensitive information directly in emails
-            </p>
-        </a>
+        <h1 class="text-4xl text-indigo-700 font-black uppercase">
+            <a class="" href="/"><img src="/images/notifius.png" alt="NotifiUs, LLC" title="NotifiUs, LLC &middot; Ready to level up your call center?"
+                 class="align-text-top w-64 inline-block">Encrypt
+            </a>
+        </h1>
+
+        <p class="text-sm text-gray-500 font-semibold text-center px-4">
+            Stop sending sensitive information directly in emails
+        </p>
+
     </header>
     @yield('content')
     <footer class="container mx-auto w-full text-center text-gray-600 max-w-xl mt-6">
