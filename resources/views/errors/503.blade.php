@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @php
-    $code = 'Server Unavailable';
+    $code = 'Maintenance';
     $desc = 'Check back soon';
 @endphp
 
