@@ -10,7 +10,7 @@
 
     <div class="container w-full mx-auto">
 
-        <form method="POST" class="mx-auto items-center max-w-xl px-3 py-8 my-8">
+        <form method="POST" class="mx-auto items-center max-w-3xl px-4 py-8 my-8">
             <p class="text-2xl text-center text-white font-semibold block my-4">
                 Enter the information you'd like to encrypt.<br><small class="text-indigo-700">You'll enter the recipient's email in the next step.</small>
             </p>

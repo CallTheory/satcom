@@ -6,32 +6,33 @@
 
     <div class="container w-full mx-auto px-2">
 
-        <div class="my-4 mx-auto items-center max-w-xl px-3 p-4 rounded shadow-lg bg-gray-100 border border-gray-300">
+        <div class="my-4 mx-auto items-center max-w-3xl p-4 rounded shadow-lg bg-gray-100 border border-gray-300">
 
             <h3 class="text-gray-700 font-bold text-lg">
                 What is this?
             </h3>
-            <p class="text-sm text-left text-gray-600 font-semibold block my-2">
-                Instead of sending credentials or other sensitive information in email, this system creates an encrypted link,
-                emails it to the intended recipient, and relies on you to transmit a 4-word passphrase which they use to
-                decrypt the link sent to them.
+            <p class="text-sm text-left text-gray-600 font-normal block my-2">
+                <i>In a nutshell, a secure way to communicate passwords and other text-based credentials.</i>
+                <br><br>
+                Instead of sending credentials or other sensitive information in the body of an email, this system creates an encrypted link,
+                emails it to the intended recipient, and relies on you to transmit a 4-word passphrase which they use to decrypt the link sent to them.
                 <br>
                 <br>
-                This allows you to avoid forwarding emails with attached or inline sensitive information.
+                This allows you to avoid forwarding emails with inline sensitive information.
             </p>
             <hr class="my-6">
             <h3 class="text-gray-700 font-bold text-lg">
                 How does it improve security?
             </h3>
-            <p class="text-sm text-left text-gray-600 font-semibold block my-2">
+            <p class="text-sm text-left text-gray-600 font-normal block my-2">
 
             <ul class="text-sm text-left text-gray-600 list-disc list-inside ml-2">
-                <li class="my-2">Eliminate including sensitive information in non-encrypted email communication.</li>
-                <li class="my-2">Promotes sharing the credentials passphrase out of band, reducing exposure to sniffing.</li>
-                <li class="my-2">Ensures emails do not contain credentials unencrypted at rest on email servers it passes through.</li>
+                <li class="my-2">Avoid sensitive information in email communication.</li>
+                <li class="my-2">Promotes out-of-band passphrase sharing, reducing exposure to sniffing.</li>
+                <li class="my-2">Mitigates non-encrypted at-rest emails stored in servers during transit.</li>
                 </ul>
             </p>
-            <p class="text-sm text-left text-gray-600 font-semibold block my-2">
+            <p class="text-sm text-left text-gray-600 font-normal block my-2">
                 As a result, you end up reducing risk of accidentally leaking passwords because of poor email practices by your
                 recipient or yourself.
             </p>
@@ -39,7 +40,7 @@
             <h3 class="text-gray-700 font-bold text-lg">
                 Is it safe to use?
             </h3>
-            <p class="text-sm text-left text-gray-600 font-semibold block my-2">
+            <p class="text-sm text-left text-gray-600 font-normal block my-2">
                 We require TLS/SSL connections, use AES-256-CBC bcrypt encryption signed with message authentication code (MAC),
                 store all information within volatile in-memory key-value store (redis) fully encrypted and set to automatically expire.
                 No data is persisted to a database. We rotate the application key automatically at random times. Links sent to recipients
@@ -48,7 +49,7 @@
                 In short, we believe this is a much safer alternative to placing credentials in plain-text within emails.
                 Other tools, including digitally signed and encrypted emails, password manager secure sharing, and encrypted messages with GPG are all great, secure alternatives.
                 <br><br>
-                Ultimately, you should only use this tool if you don't have an alternative secure method of sending credentials
+                Ultimately, you should only use this tool if you don't have an alternative secure method of sending credentials,
                 and you trust the creator, <a title="Patrick Labbett" class="font-bold text-gray-600 hover:text-gray-900" href="https://labbett.net">Patrick Labbett</a>, and the company <a title="NotifiUs, LLC" class="font-bold text-gray-600 hover:text-gray-900" href="https://notifi.us">NotifiUs, LLC</a>.
             </p>
 
@@ -56,7 +57,7 @@
             <h3 class="text-gray-700 font-bold text-lg">
                 I'm receiving emails and don't know why!?
             </h3>
-            <p class="text-sm text-left text-gray-600 font-semibold block my-2">
+            <p class="text-sm text-left text-gray-600 font-normal block my-2">
                 This generally means someone is trying to send you a message that has been encrypted. In rare cases, it's possible a bad actor is
                 using our system to spam or otherwise abuse the service. We've taken steps to mitigate abuse, including rate-limiting to 1 submission per minute,
                 detecting automated submissions, and requiring a reCaptcha challenge.
