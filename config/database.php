@@ -36,7 +36,8 @@
     'connections' => [
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL')
+            'url' => env('DATABASE_URL'),
+            'database' => 'dne',
         ]
     ],
     /*
