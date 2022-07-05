@@ -10,9 +10,9 @@ A simple application to transfer credentials more safely than via email.
 * AES-256-CBC encryption using bcrypt
 * Randomly generated four word passphrase for ease of use
 * Passphrase transfer over different channel/medium/address (user responsibility)
-* Honeypot field on encryption request
+* Spatie Honeypot field on encryption request
 * 1 request per minute throttling
-* Google reCaptcha v2
+* Google reCaptcha v2 to combat spamming
 
 ## Ideas, Improvements, Etc.
 
@@ -21,5 +21,5 @@ A simple application to transfer credentials more safely than via email.
 - Delete on open
 - Email follow up
 - One click resend
-- Make records a model instead of calling redis facades constantly
+- Make records a (non-db backed) model instead of calling redis facades constantly
 

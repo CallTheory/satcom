@@ -40,18 +40,10 @@ return [
         'array' => [
             'driver' => 'array',
         ],
-
-        'database' => [
-            'driver' => 'database',
-            'table' => 'cache',
-            'connection' => null,
-        ],
-
         'file' => [
             'driver' => 'file',
             'path' => storage_path('framework/cache/data'),
         ],
-
         'memcached' => [
             'driver' => 'memcached',
             'persistent_id' => env('MEMCACHED_PERSISTENT_ID'),
