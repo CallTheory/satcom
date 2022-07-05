@@ -38,6 +38,7 @@
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'database' => 'dne',
+            'table' => 'dne',
         ]
     ],
     /*
